@@ -1,15 +1,15 @@
-from random import sample
+class Circle():
+    pi = 3.14
+
+    def __init__(self, radius=1):
+        self.radius = radius
+
+    def area(self):
+        return self.radius * self.radius * Circle.pi
+
+    def setRadius(self, newR):
+        self.radius = newR
 
 
-class Dog():
-    species = "Mammal"
-
-    def __init__(self, breed, name):
-        self.breed = breed
-        self.name = name
-
-
-myDog = Dog("Lab", "Alpha")
-otherDog = Dog("Huskie", "Bravo")
-print(otherDog.breed)
-print(myDog.breed)
+myc = Circle()
+print(myc.area())
